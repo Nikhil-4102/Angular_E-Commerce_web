@@ -10,7 +10,8 @@
              </div>
              <div class="w-full flex justify-center">
 
-                @if(isEdit){<button mat-raised-button color="primary" class="w-1/2 " (click)="update()" [disabled]="!name">Update Category</button>} @else {<button mat-raised-button color="primary" class="w-1/2 " (click)="add()" [disabled]="!name">Add Category</button>>}
+               @if(isEdit){<button mat-raised-button color="primary" class="w-1/2 " (click)="update()" [disabled]="!name">Update Category</button>} 
+               @else {<button mat-raised-button color="primary" class="w-1/2 " (click)="add()" [disabled]="!name">Add Category</button>}
 
                 
              </div>

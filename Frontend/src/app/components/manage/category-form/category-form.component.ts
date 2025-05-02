@@ -41,9 +41,9 @@ export class CategoryFormComponent {
 
   update(){
     console.log(this.name)
-    this.categoryService.updateCategory(this.id ,this.name).subscribe((result:any) =>{
+    this.categoryService.updateCategory(this.id ,this.name).subscribe((result) =>{
       alert("Category updated Successfully");
-      this.router.navigate(['/admin/categories']);
+      this.router.navigateByUrl('/admin/categories');
     });
      
   }
