@@ -4,6 +4,7 @@ const app = express();
 const port = 3000; // Port number
 const cors = require("cors"); // Importing CORS for cross-origin requests
 const categoryRoutes = require("./routes/category"); // Importing category routes
+const brandRoutes = require("./routes/brand");
 
 app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(express.json()); 
@@ -14,6 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/category",categoryRoutes);
+app.use("/brand",brandRoutes);
 
 async function connectDb() {
   await mongoose.connect("mongodb://localhost:27017", {
