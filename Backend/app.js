@@ -2,9 +2,12 @@ const express = require("express");
 const mongoose = require("mongoose"); // Importing mongoose for MongoDB connection
 const app = express();
 const port = 3000; // Port number
+const cors = require("cors"); // Importing CORS for cross-origin requests
 const categoryRoutes = require("./routes/category"); // Importing category routes
 
-app.use(express.json()); // Middleware to parse JSON requests
+app.use(cors({ origin: 'http://localhost:4200' }));
+app.use(express.json()); 
+
 
 app.get("/", (req, res) => {
   res.send("Hello World!"); // Response to the root URL
