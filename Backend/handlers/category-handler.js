@@ -15,7 +15,7 @@ async function getCategories(){
 }
 
 async function getCategoryById(id){
-    let categories = await Category.findById(id);
+    let category = await Category.findById(id);
     return category.toObject();
 }
 
