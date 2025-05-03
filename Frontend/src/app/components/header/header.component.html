@@ -1,0 +1,22 @@
+
+<header class="ecom-header">
+    <div class="top-bar">
+      <div class="logo">ShopNow</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." />
+      </div>
+      <div class="profile-link">
+        <a href="/profile">My Profile</a>
+      </div>
+    </div>
+  
+    <nav class="category-menu">
+      <ul>
+        @for (category of categoryList; track $index) {
+            <li><a>{{category.name}}</a></li>
+        }
+        
+      </ul>
+    </nav>
+  </header>
+  

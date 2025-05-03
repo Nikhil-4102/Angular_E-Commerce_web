@@ -1,0 +1,18 @@
+
+<div class="border-r-4 w-full">
+    <img
+      [src]="product.images[0]"
+      alt="Product Image"
+      class="w-full h-52 object-fit:cover"
+    />
+
+    <div class="p-4">
+      <h6 class="mb-2">{{ product.name }}</h6>
+      <p>{{ product.shortDescription }}</p>
+
+      <div class="flex justify-between item-center">
+        <span class="text-2xl font-bold">{{ product.price }}₹</span>
+        <button mat-flat-button color="primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>

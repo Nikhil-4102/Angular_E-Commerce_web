@@ -3,9 +3,11 @@ export interface Product {
   name: string,
   shortDescription: string,
   description: string,
-  Price: number,
+  price: number,
   discount: number,
   images: string[],
   categoryId:string;
+  isFeatured:boolean,
+  isNewProduct:boolean
 
 }
